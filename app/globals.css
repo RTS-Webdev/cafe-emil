@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Playball';
+  src: url('/fonts/Playball-Regular.woff') format('woff'),
+       url('/fonts/Playball-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --font-family: 'Playball';
+}
+
+.font-playball {
+  font-family: var(--font-family);
 }
 
 body {

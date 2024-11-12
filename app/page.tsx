@@ -1,9 +1,12 @@
-import Navbar from "./components/Navbar"
-
+import Images from "./components/ui/Images";
+import Navbar from "./components/Navbar";
+import Menu from "./components/Menu";
 export default function Home() {
   return (
-    <div className="flex flex-col h-[150vh] bg-neutral-950">        
+    <>
       <Navbar />
-    </div>
-  )
+      <Images />
+      <Menu />
+    </>
+  );
 }

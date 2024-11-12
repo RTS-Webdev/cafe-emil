@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const imageSources = [
-  { src: "/img.svg", alt: "Reserver bord" },
-  { src: "/img.svg", alt: "Åbningstider" },
-  { src: "/img.svg", alt: "Bestil et bord" },
+  { src: "/1.jpg", alt: "Reserver bord" },
+  { src: "/2.jpg", alt: "Åbningstider" },
+  { src: "/3.jpg", alt: "Bestil et bord" },
 ];
 
 export default function Images() {
@@ -16,7 +16,6 @@ export default function Images() {
             alt={img.alt}
             width={600}
             height={1000}
-            priority={true}
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />

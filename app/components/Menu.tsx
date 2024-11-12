@@ -1,14 +1,12 @@
 "use client"
 
 import { ChevronRight } from "lucide-react"
-import { menu } from "../constants"
+import { drikkevarer, madvarer } from "../constants"
 import { useRouter } from "next/navigation"
 import { Tabs, TabsList, TabsTrigger } from "./ui/Tabs"
 import { TabsContent } from "@radix-ui/react-tabs"
 
 export default function Component() {
-    const router = useRouter()
-
     return (
         <div className="min-h-screen bg-white text-gray-800 p-4 md:p-8 lg:p-16">
             <header className="text-center mb-12 max-w-3xl mx-auto">
@@ -18,20 +16,16 @@ export default function Component() {
                     vores menukort for at skabe en spiseoplevelse, der er helt unik.
                 </p>
                 <div className="flex justify-center gap-8 text-sm">
-                    {/* <span className="text-gray-900 border-b-2 border-gray-900 pb-1">SPISEKORT</span>
-          <span className="text-gray-600">DRIKKELSE</span>
-          <span className="text-gray-600">VINE</span> */}
-
                     <Tabs defaultValue="spisekort" className="">
                         <TabsList>
-                            <TabsTrigger value="spisekort">SPISEKORT</TabsTrigger>
-                            <TabsTrigger value="drikkelse">DRIKKELSE</TabsTrigger>
+                            <TabsTrigger value="spisekort">MAD</TabsTrigger>
+                            <TabsTrigger value="drikkevarer">DRIKKEVARER</TabsTrigger>
                             <TabsTrigger value="vine">VINE</TabsTrigger>
                         </TabsList>
                         <TabsContent value="spisekort">
-                            <div className="min-w-[80rem] mx-auto bg-[#1c1c1c] text-white p-12 rounded-lg shadow-xl">
+                            <div className="mx-auto bg-[#1c1c1c] text-white p-12 rounded-lg shadow-xl md:min-w-[80rem]">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
-                                    {menu.map((section) => (
+                                    {madvarer.map((section) => (
                                     <MenuSection
                                         key={section.category}
                                         title={section.category.toUpperCase()}

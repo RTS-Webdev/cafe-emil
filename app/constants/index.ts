@@ -1,4 +1,4 @@
-export const menu = [
+export const madvarer = [
     {
         category: "Burgers",
         subtitle: "Alle burgere serveres med salat, tomat, rødløg, syltet agurk og pommes frites.",
@@ -57,5 +57,69 @@ export const menu = [
             { name: "Pandekage m. kylling", price: 99 },
             { name: "Fiskefilet", description: "Serveres med pommes frites og remoulade", price: 99 },
         ]
+    },
+    {
+        category: "Brunch",
+        subtitle: "Brunch alle dage 10:00 - 14:00",
+        items: [
+            { name: "Brunch", description: "Serveres med ost, pølser, frugt, yoghurt m/müsli, sirup, æg med bacon, pandekager, kage, brød og smør | uden drikkevarer", price: 129 },
+            { name: "Maidens Brunch", description: "Serveres med ost, kyllingepølser, tyrkisk peperoni (sucuk), frugt, yoghurt m/müsli, sirup, æg, oliven, tyrkisk hvid ost, pandekager, kage, brød og smør | uden drikkevarer", price: 129 },
+            { name: "Maidens Toast", description: "Serveres med ost og pepperoni", price: 79 }, 
+        ]
+    },
+    {
+        category: "Salater",
+        subtitle: "Alle salater serveres med brød og smør",
+        items: [
+            { name: "Kyllingesalat", description: "Serveres med bacon og karrydressing", price: 155 },
+            { name: "Laksesalat", description: "Serveres med røget laks og avocado", price: 155 },
+            { name: "Tunmoussésalat", price: 155 },
+            { name: "Gedeost Salat", description: "Serveres med pinjekerner og basilikumdressing", price: 155 },
+            { name: "Rejesalat", description: "Serveres med, avocado og dild/lemon dressing", price: 155 },
+            { name: "Emils Salat", description: "Serveres med stegte kæmperejer, løg, avocado, basilikum citronsaft og salatolie", price: 165 },
+        ]
+    },
+    {
+        category: "Pasta, omelet & mere",
+        items: [
+            { name: "Pasta", description: "Vælg mellem; kylling eller vegetar. Vendt i en tomatflødesauce m. champignon og parmesan", price: 179 },
+            { name: "Lasagne", description: "Serveres med salat", price: 179 },
+            { name: "Stjerneskud", description: "Rødsæpttefilet serveret med dampet torsk, rejer, kaviar, dressing og citron", price: 189 },
+            { name: "Paneret rødspættefilet", description: "2 panerede rødspættefileter, serveret med salat, remoulade og pommes frites", price: 169 },
+            { name: "Omelet", description: "Serveres med kylling", price: 169 },
+            { name: "Spansk omelet", description: "Serveres med småkrydderkartofler, cherrytomatoer, peberfrugt og ost", price: 169 },
+        ]
+    },
+    {
+        category: "Tilbehør",
+        subtitle: "Vælg din dip, du kan vælge imellem; ketchup, mayo eller chilimayo",
+        items: [
+            { name: "Tynde fritter", price: 89 },
+            { name: "Grovfritter", price: 89 },
+            { name: "Sweet Potato Fries", price: 89 },
+            { name: "Popcorn", price: 89 },
+            { name: "Peanuts", price: 89 },
+        ]
     }
+]
+
+export const drikkevarer = [
+    {
+        category: "Kolde Drikke",
+        subtitle: "",
+        items: [
+            { name: "Lille Sodavand", price: 46 },
+            { name: "Mellem Sodavand", price: 59 },
+            { name: "Stor Sodavand", description: "Pepsi, Pepsi Max, Mirinda Lemon, Mirinda Orange, Faxe Kondi, Faxe Free eller Danskvand", price: 77 },
+            { name: "Energidrik", price: 47 },
+            { name: "Ice Tea Peach eller Lemon", price: 75 },
+            { name: "Hyldeblomst", price: 75 },
+            { name: "Kildevand 1/2 L", price: 45 },
+            { name: "Friskpres, Appelsinjuice 0,50CL", price: 69 },
+            { name: "Alm. Lille Juice", price: 47 },
+            { name: "Alm. Mellem Juice", description: "Kan vælges imellem; applesin, æble eller mango", price: 57 },
+            { name: "Postevand", price: 23 },
+            { name: "Lille glas mælk", price: 23 },
+        ]
+    },
 ]

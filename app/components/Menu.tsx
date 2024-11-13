@@ -22,8 +22,8 @@ export default function Menu() {
                         </TabsList>
                         {['mad', 'drikkevarer'].map((tab) => (
                             <TabsContent key={tab} value={tab}>
-                                <div className="mx-auto bg-[#1c1c1c] text-white p-12 rounded-lg shadow-xl md:min-w-[80rem]">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
+                                <div className="mx-auto bg-[#1c1c1c] text-white p-6 md:p-8 lg:p-12 rounded-lg shadow-xl md:min-w-[40rem] xl:min-w-[80rem]">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-4 sm:gap-x-6 lg:gap-x-8 gap-y-8 items-start">
                                         {(tab === 'mad' ? madvarer :
                                             tab === 'drikkevarer' ? drikkevarer :
                                                 [])

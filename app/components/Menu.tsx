@@ -8,7 +8,7 @@ import { TabsContent } from "@radix-ui/react-tabs"
 
 export default function Menu() {
     return (
-        <div className="min-h-screen bg-white text-gray-800 p-4 md:p-8 lg:p-16">
+        <div className="min-h-screen bg-white text-gray-800">
             <header className="text-center mb-12 max-w-3xl mx-auto">
                 <h1 className="text-3xl font-serif mb-4 text-gray-900">Menukort</h1>
                 <p className="text-sm text-gray-600 mb-6 text-balance">

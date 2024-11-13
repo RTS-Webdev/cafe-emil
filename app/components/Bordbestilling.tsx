@@ -1,6 +1,6 @@
 export default function Bordbestilling() {
     return (
-        <div className="justify-center items-center flex flex-col">
+        <section id="bordbestilling" className="justify-center items-center flex flex-col">
             <h2 className="text-3xl font-serif mb-8 mx-10 text-left text-gray-900">Bordbestilling</h2>
             <p className="mx-10 mb-8 text-center text-gray-900 text-balance">
                 Bordbestilling kan ske ved at ringe til cafeen i åbningstiden,
@@ -11,6 +11,6 @@ export default function Bordbestilling() {
                 </span>{' '}
                 for at bestille bord.
             </p>
-        </div>
+        </section>
     )
 }

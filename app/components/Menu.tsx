@@ -3,8 +3,7 @@
 import { ChevronRight } from "lucide-react"
 import { drikkevarer, madvarer } from "../constants"
 import { useRouter } from "next/navigation"
-import { Tabs, TabsList, TabsTrigger } from "./ui/Tabs"
-import { TabsContent } from "@radix-ui/react-tabs"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/Tabs"
 
 export default function Menu() {
     return (
@@ -17,7 +16,7 @@ export default function Menu() {
                 </p>
                 <div className="flex justify-center gap-8 text-sm">
                     <Tabs defaultValue="mad" className="">
-                        <TabsList>
+                        <TabsList className="pb-16">
                             <TabsTrigger value="mad" className="tab-trigger">MAD</TabsTrigger>
                             <TabsTrigger value="drikkevarer" className="tab-trigger">DRIKKEVARER</TabsTrigger>
                         </TabsList>
@@ -25,16 +24,18 @@ export default function Menu() {
                             <TabsContent key={tab} value={tab}>
                                 <div className="mx-auto bg-[#1c1c1c] text-white p-12 rounded-lg shadow-xl md:min-w-[80rem]">
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
-                                        {(tab === 'mad' ? madvarer : 
-                                          tab === 'drikkevarer' ? drikkevarer :
-                                          []).map((section) => (
-                                            <MenuSection
-                                                key={section.category}
-                                                title={section.category.toUpperCase()}
-                                                subtitle={section.subtitle}
-                                                items={section.items.map(item => ({ ...item, price: item.price.toString() }))}
-                                            />
-                                        ))}
+                                        {(tab === 'mad' ? madvarer :
+                                            tab === 'drikkevarer' ? drikkevarer :
+                                                [])
+                                            .sort((a, b) => b.items.length - a.items.length)
+                                            .map((section) => (
+                                                <MenuSection
+                                                    key={section.category}
+                                                    title={section.category.toUpperCase()}
+                                                    subtitle={section.subtitle}
+                                                    items={section.items.map(item => ({ ...item, price: item.price.toString() }))}
+                                                />
+                                            ))}
                                     </div>
                                 </div>
                             </TabsContent>
@@ -71,11 +72,11 @@ function MenuSection({ title, subtitle, items }: MenuSectionProps) {
     }
 
     return (
-        <section>
+        <section id="menu">
             <h2 className="text-xl font-serif mb-4 tracking-wide font-bodoni text-balance">{title}</h2>
             {subtitle && <p className="text-sm text-gray-400 mb-4 text-left">{subtitle}</p>}
             <div className="space-y-2">
-                {items.map((item, index) => (
+                {[...items].map((item, index) => (
                     <div key={index} className="mb-2">
                         <div className="flex justify-between items-baseline">
                             <a

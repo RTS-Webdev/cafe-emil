@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 import { Tabs, TabsList, TabsTrigger } from "./ui/Tabs"
 import { TabsContent } from "@radix-ui/react-tabs"
 
-export default function Component() {
+export default function Menu() {
     return (
         <div className="min-h-screen bg-white text-gray-800 p-4 md:p-8 lg:p-16">
             <header className="text-center mb-12 max-w-3xl mx-auto">
@@ -16,28 +16,29 @@ export default function Component() {
                     vores menukort for at skabe en spiseoplevelse, der er helt unik.
                 </p>
                 <div className="flex justify-center gap-8 text-sm">
-                    <Tabs defaultValue="spisekort" className="">
+                    <Tabs defaultValue="mad" className="">
                         <TabsList>
-                            <TabsTrigger value="spisekort">MAD</TabsTrigger>
-                            <TabsTrigger value="drikkevarer">DRIKKEVARER</TabsTrigger>
-                            <TabsTrigger value="vine">VINE</TabsTrigger>
+                            <TabsTrigger value="mad" className="tab-trigger">MAD</TabsTrigger>
+                            <TabsTrigger value="drikkevarer" className="tab-trigger">DRIKKEVARER</TabsTrigger>
                         </TabsList>
-                        <TabsContent value="spisekort">
-                            <div className="mx-auto bg-[#1c1c1c] text-white p-12 rounded-lg shadow-xl md:min-w-[80rem]">
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
-                                    {madvarer.map((section) => (
-                                    <MenuSection
-                                        key={section.category}
-                                        title={section.category.toUpperCase()}
-                                        subtitle={section.subtitle}
-                                        items={section.items.map(item => ({ ...item, price: item.price.toString() }))}
-                                        />
-                                    ))}
+                        {['mad', 'drikkevarer'].map((tab) => (
+                            <TabsContent key={tab} value={tab}>
+                                <div className="mx-auto bg-[#1c1c1c] text-white p-12 rounded-lg shadow-xl md:min-w-[80rem]">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
+                                        {(tab === 'mad' ? madvarer : 
+                                          tab === 'drikkevarer' ? drikkevarer :
+                                          []).map((section) => (
+                                            <MenuSection
+                                                key={section.category}
+                                                title={section.category.toUpperCase()}
+                                                subtitle={section.subtitle}
+                                                items={section.items.map(item => ({ ...item, price: item.price.toString() }))}
+                                            />
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        </TabsContent>
-                        <TabsContent value="drikkelse"></TabsContent>
-                        <TabsContent value="vine"></TabsContent>
+                            </TabsContent>
+                        ))}
                     </Tabs>
                 </div>
             </header>
@@ -71,7 +72,7 @@ function MenuSection({ title, subtitle, items }: MenuSectionProps) {
 
     return (
         <section>
-            <h2 className="text-xl font-serif mb-4 tracking-wide text-[#6ae639] text-balance">{title}</h2>
+            <h2 className="text-xl font-serif mb-4 tracking-wide font-bodoni text-balance">{title}</h2>
             {subtitle && <p className="text-sm text-gray-400 mb-4 text-left">{subtitle}</p>}
             <div className="space-y-2">
                 {items.map((item, index) => (
@@ -83,7 +84,7 @@ function MenuSection({ title, subtitle, items }: MenuSectionProps) {
                                     e.preventDefault()
                                     handleItemClick(item)
                                 }}
-                                className="text-white hover:text-[#6ae639] transition-colors duration-200 flex items-center group"
+                                className="text-white hover:text-green-500 transition-colors duration-200 flex items-center group"
                             >
                                 {item.name}
                                 <ChevronRight className="ml-1 w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />

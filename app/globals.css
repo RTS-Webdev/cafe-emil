@@ -12,6 +12,7 @@
 
 :root {
   --font-family: 'Playball';
+  --font-bodoni: 'Bodoni Moda';
 }
 
 .font-playball {
@@ -21,3 +22,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.tab-trigger[data-state="active"] {
+  position: relative;
+}
+
+.tab-trigger[data-state="active"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: black;
+}
+

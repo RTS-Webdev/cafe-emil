@@ -100,6 +100,19 @@ export const madvarer = [
             { name: "Popcorn", price: 89 },
             { name: "Peanuts", price: 89 },
         ]
+    },
+    {
+        category: "Dessert",
+        items: [
+            { name: "Pandekage", description: "Serveres med is", price: 85 },
+            { name: "Nutella pandekage", description: "Serveres med is", price: 95 },
+            { name: "Bananasplit", price: 79 },
+            { name: "Belgisk vaffel", description: "Serveres med to kugler is", price: 95 },
+            { name: "Blandet is", description: "Serveres med tre kugler med flødeskum", price: 79 },
+            { name: "Dagens Cheescake", description: "Se kageskabet ved baren", price: 69 },
+            { name: "Dagens Kage", description: "Se kageskabet ved baren", price: 65 },
+            { name: "Maidens Künefe", description: "Serveres med vaniljeis", price: 79 },
+        ]
     }
 ]
 
@@ -122,4 +135,120 @@ export const drikkevarer = [
             { name: "Lille glas mælk", price: 23 },
         ]
     },
+    {
+        category: "Milkshakes",
+        subtitle: "Alle milkshakes serveres med flødeskum.",
+        items: [
+            { name: "Ferrero Rocher", price: 75},
+            { name: "Oreo", price: 75 },
+            { name: "Lotus Kiks", price: 75 },
+            { name: "Jordbær", price: 75 },
+            { name: "Vanilje", price: 75 },
+        ]
+    },
+    {
+        category: "Smoothie",
+        items: [
+            { name: "Smooth Pink", description: "Serveres med jordbær og banan", price: 75 },
+        ]
+    },
+    {
+        category: "Lemonade",
+        subtitle: "Du kan vælge imellem nedenstående lemonade",
+        items: [
+            { name: "Old Fashion", price: 75 },
+            { name: "Strawberry", price: 75 },
+            { name: "Lemon", price: 75 },
+            { name: "Raspberry", price: 75 },
+            { name: "Passion", price: 75 },
+            { name: "Mango", price: 75 },
+            { name: "Cherry", price: 75 },
+            { name: "Blueberry", price: 75 },
+            { name: "Pomegranate", price: 75 },
+        ]
+    },
+    {
+        category: "Frozen Lemonde",
+        items: [
+            { name: "Old Fashion Lemonade", description: "Blandet med isterninger, hyldeblomst og mynte", price: 75 },
+            { name: "Strawberry", description: "Blandet med isterninger, hyldeblomst, jordbære sirup og mynte", price: 75 },
+        ]
+    },
+    {
+        category: "Fadøl",
+        subtitle: "Du kan vælge imellem; Royal Classic eller Royal Pilsner",
+        items: [
+            { name: "Lille", price: 52 },
+            { name: "Mellem", price: 65 },
+            { name: "Stor", price: 79 },
+        ]
+    },
+    {
+        category: "Heineken (Ekstra kold)",
+        items: [
+            { name: "Lille", price: 54 },
+            { name: "Mellem", price: 69 },
+            { name: "Stor", price: 82 },
+        ]
+    },
+    {
+        category: "Flaskeøl",
+        items: [
+            { name: "Schiøtz Gylden Ipa (50 cl.)", price: 71 },
+            { name: "Schiøtz Mørk Mumme (50 cl.)", price: 71 },
+            { name: "Edelweiss", price: 61 },
+            { name: "Anarkist Bloody Weizen", price: 71 },
+            { name: "Anarkist Brown Ale (50 cl.)", price: 71 },
+            { name: "Anarkist England", price: 71 },
+            { name: "Heineken 0.0% (33 cl.)", description: "Alkoholfri øl", price: 52 },
+        ]
+    },
+    {
+        category: "English Teashop Organic",
+        subtitle: "Du kan vælge imellem nedenstående te",
+        items: [
+            { name: "Jasmine Green", price: 49 },
+            { name: "Lemongrass Citrus & Ginger", price: 49 },
+            { name: "Earl Grey", price: 49 },
+            { name: "Rooibos Acai Pomegranate", price: 49 },
+            { name: "White Tea with Blueberry", price: 49 },
+            { name: "Mint Tea", price: 49 },
+            { name: "Super Berries", price: 49 },
+        ]
+    },
+    {
+        category: "Kaffe",
+        items: [
+            { name: "Espresso", price: 42 },
+            { name: "Americano", price: 45 },
+            { name: "Cappuccino", price: 55 },
+            { name: "Café Latte", price: 55 },
+            { name: "Varm Chokolade", description: "Med flødeskum", price: 55 },
+            { name: "Chai Latte", description: "Med tigerspice eller vanilje", price: 59 },
+            { name: "Frapino", description: "(milkshakeform) valgfri sirup og med vaniljeis", price: 75 },
+            { name: "Islatte", description: "Serveres med valgfri sirup - espresso, mælk og isterninger", price: 75 },
+            { name: "Kaffe Sirup", description: "Serveres med hasselnød, vanilke eller karamel", price: 49 },
+            { name: "Irish Coffee", description: "Serveres med Tullamore Dew", price: 99 },
+        ]
+    },
+    {
+        category: "Cocktails",
+        items: [
+            { name: "Gin Tonic", description: "Indeholder gin, tonic", price: 99 },
+            { name: "Mojito", description: "Vælg mellem; almindelig, strawberry eller melon", price: 99 },
+            { name: "Aperol Spritz", description: "Indeholder aperol, prosecco, danskvand og en appelsinskive", price: 99 },
+            { name: "Tequila Sunrise", description: "Indeholder tquila, appelsinjuice, hindbær", price: 99 },
+            { name: "Strawberry Daiquiri", description: "Indeholder rom, jordbærpurre og jordbær", price: 99 },
+            { name: "Casual Passion", description: "Indeholder vodka, passionfrugtjuice og vanilje sirup", price: 99 },
+            { name: "Shot", price: 35 },
+        ]
+    },
+    {
+        category: "Vine",
+        items: [
+            { name: "Husets Rødvin", description: "Vinøs og delikat duft med en karakteristisk bouquet", price: 69 },
+            { name: "Husets Hvidvin", description: "Frisk og aromatisk, velduftende frugtig krakter", price: 69 },
+            { name: "Husets Rosevin", description: "Flot klar farve og parfumeret duft", price: 69 },
+        ]
+    }
 ]

@@ -19,7 +19,7 @@ export default function Navbar() {
           Café Emil
         </Link>
         
-        <div className="flex gap-6">
+        <div className="flex gap-2 text-sm md:text-base md:gap-6">
           <a onClick={() => handleScroll('menu')} className="hover:text-gray-600 scroll-smooth">
             Menu
           </a>

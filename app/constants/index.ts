@@ -14,9 +14,9 @@ export const madvarer = [
         category: "Sandwiches",
         subtitle: "Alle sandwiches serveres med grovfritter og salat.",
         items: [
-            { name: "Kyllingsandwich", description: "Serveres med humus og creme fraiche dressing", price: 159 },
+            { name: "Kyllingsandwich", description: "Serveres med hummus og creme fraiche dressing", price: 159 },
             { name: "Clubsandwich", description: "Med kylling og bacon, serveres med guacamole og karrydressing", price: 159 },
-            { name: "Sandwich (vegetarisk)", description: "Serveres med creme fraiche dresssing, humus og tzatziki", price: 159 },
+            { name: "Sandwich (vegetarisk)", description: "Serveres med creme fraiche dresssing, hummus og tzatziki", price: 159 },
             { name: "Sandwich med røget laks", description: "Serveres med tzatziki", price: 159 },
             { name: "Sandwich med tunmousse", description: "Serveres med citron", price: 159 },
             { name: "Ribeye Sandwich", description: "Serveres med grillet ribeye, pesto, løgmarmelade og tzakiki", price: 179 },
@@ -25,9 +25,9 @@ export const madvarer = [
     {
         category: "Fra Grillen",
         items: [
-            { name: "Ribeye Steak (3000g)", description: "Serveres med stegte kartofler og garniture | vælg mellem bearnaise-, eller pebersauce", price: 320 },
+            { name: "Ribeye Steak (300g)", description: "Serveres med stegte kartofler og garniture | vælg mellem bearnaise-, eller pebersauce", price: 320 },
             { name: "Hakkebøf (250g. hakket øksekød)", description: "Serveres med stegte kartofler og garniture | vælg mellem bearnaise-, eller pebersauce", price: 210 },
-            { name: "Kyllingeret", description: "Mørt kyllingebryst, serveres med pommes frites, humus og garniture", price: 189 },
+            { name: "Kyllingeret", description: "Mørt kyllingebryst, serveres med pommes frites, hummus og garniture", price: 189 },
         ]
     },
     {

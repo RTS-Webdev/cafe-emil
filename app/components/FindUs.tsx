@@ -23,16 +23,16 @@ export default function FindUs() {
                     </div>
                 </div>
             </div>
-            <button className="flex gap-4 mx-10 mb-8 text-left text-gray-900">
-                <a href="https://www.facebook.com/cafeemil" target="_blank">
+            <button className="flex gap-8 mx-10 mb-8 text-left text-gray-900" aria-label="Find os på Facebook og Findsmiley">
+                <a href="https://www.facebook.com/cafeemil" target="_blank" aria-label="Find os på Facebook">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
                 </a>
-                <a href="https://www.findsmiley.dk/577757" target="_blank">
+                <a href="https://www.findsmiley.dk/577757" target="_blank" aria-label="Find os på Findsmiley">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
                 </a>
             </button>
             <div className="p-8">
-                <iframe
+                <iframe aria-label="Cafë Emil på Google Maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.8072372011747!2d12.510180776676892!3d55.66499397220133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253f2aef1c377%3A0x37211baccf9de81e!2sCaf%C3%A9%20Emil!5e0!3m2!1sen!2sdk!4v1710799607443!5m2!1sen!2sdk"
                     width="100%"
                     height="450"

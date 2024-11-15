@@ -6,7 +6,7 @@ export default function Bordbestilling() {
                 Bordbestilling kan ske ved at ringe til cafeen i åbningstiden,
                 hvilket du kan se i nedenunder.<br />
                 Ring på tlf.:{' '}
-                <span className="text-green-500 font-bold drop-shadow-2xl">
+                <span className="font-bold">
                     36 44 74 41
                 </span>{' '}
                 for at bestille bord.
